@@ -19,16 +19,17 @@ Sabendo que o professor tem dificuldade de memorizar, informe como ele descobriu
 
 ### Resolução:
 
-:link: Google Drive: https://docs.google.com/document/d/1lzgct4oIgpB6lFIFq-j6TeLigEOW1KaqkGTZpqGVox8/edit?usp=sharing
+:link: (enviad) no Google Drive: https://docs.google.com/document/d/1lzgct4oIgpB6lFIFq-j6TeLigEOW1KaqkGTZpqGVox8/edit?usp=sharing
 
+<details>
+<summary>Algoritmo</summary>
+<code language="markdown">
 O professor descobriu a troca ao observar o padrão de repetição.
 Antes de sair da sala o professor dividiu a sala e temos a seguinte divisão, em cada fileira:
-
 - 4 alunos de português
 - 2 alunos de matemática
-
 Isso se repete nas 6 fileiras.
-
 Quando ele retornou para a sala, nas fileiras 4 e 5, tivemos uma troca de alunos, ficando 3 alunos de cada matéria nelas.
-
 E foi assim, pelo padrão de repetição que ele identificou a mudança ao voltar para a sala.
+</code>
+</details>

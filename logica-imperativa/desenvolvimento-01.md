@@ -10,8 +10,11 @@ Pedro foi ao supermercado e comprou ovos, leite, farinha, açúcar, manteira e a
 
 ### Resolução:
 
-Link Google Drive: https://docs.google.com/document/d/1HNQbuGhQMtctwwcuo2IQay2bxZ8hopqdV9CplyfvhLQ/edit?usp=sharing
+Link (enviado) no Google Drive: https://docs.google.com/document/d/1HNQbuGhQMtctwwcuo2IQay2bxZ8hopqdV9CplyfvhLQ/edit?usp=sharing
 
+<details>
+<summary>Algoritmo</summary>
+<code language="markdown">
 - 01 - Pegar uma tigela
 - 02 - Pegar 3 ovos
 - 03 - Quebrar os 3 ovos
@@ -60,3 +63,5 @@ Link Google Drive: https://docs.google.com/document/d/1HNQbuGhQMtctwwcuo2IQay2bx
 - 46 - Pegar um garfo
 - 47 - Pegar um pedaço de bolo
 - 48 - Comer o bolo!
+</code>
+</details>
