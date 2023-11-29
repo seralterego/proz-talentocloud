@@ -20,19 +20,18 @@
 <summary>Algoritmo</summary>
 <code style="display: block; width: 100%;">
 Var
-area-terreo = caractere
-area-primeiro-andar = caractere
-area-externa = caractere
-quantidade-pessoas = inteiro
-grupo-fumante = boleano
-grupo-animais-estimacao = boleano
-
+area-terreo = caractere;
+area-primeiro-andar = caractere;
+area-externa = caractere;
+quantidade-pessoas = inteiro;
+grupo-fumante = boleano;
+grupo-animais-estimacao = boleano;
+<!--  -->
 Inicio
 escreva("Mesa para quantas pessoas?: ")
 leia(quantidade-pessoas)
-
-
-escolha quantidade-pessoas
+<!--  -->
+Escolha quantidade-pessoas
   caso ">= 5"
     leia quantidade-pessoas
     escreva("Tem algum fumante ou animal de estimação no grupo?: ")
@@ -45,7 +44,7 @@ escolha quantidade-pessoas
   caso "< 5"
     leia quantidade-pessoas
     escreva("Encaminhar clientes para o térreo.")
-fimescolha
-fimalgoritmo
+Fimescolha
+Fimalgoritmo
 </code>
 </details>
