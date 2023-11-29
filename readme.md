@@ -10,9 +10,10 @@
 ## Sumário
 
 - Lógica Imperativa
-  - Atividade 01: [aqui](./logica-imperativa/desenvolvimento-01.md)
-  - Atividade 02: [aqui](./logica-imperativa/desenvolvimento-02.md)
-  - Atividade 03: [aqui](./logica-imperativa/desenvolvimento-03.md)
+  - Atividade 01: [aqui](./01-logica-imperativa/desenvolvimento-01.md)
+  - Atividade 02: [aqui](./01-logica-imperativa/desenvolvimento-02.md)
+  - Atividade 03: [aqui](./01-logica-imperativa/desenvolvimento-03.md)
+  - Atividade 04: [aqui](./01-logica-imperativa/desenvolvimento-04.md)
 
 ---
 
