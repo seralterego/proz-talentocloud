@@ -40,6 +40,7 @@ escreva("O seu CPF é: ", endereco)
 escreva("Escreva o seu RG: ")
 leia(RG)
 escreva("O seu RG é: ", endereco)
+Fimalgoritmo
 
 </code>
 </details>
