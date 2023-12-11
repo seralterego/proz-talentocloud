@@ -9,12 +9,21 @@
 
 ## Sumário
 
-- Lógica Imperativa
+### 01 - Lógica Imperativa
   - Atividade 01: [aqui](./01-logica-imperativa/desenvolvimento-01.md)
   - Atividade 02: [aqui](./01-logica-imperativa/desenvolvimento-02.md)
   - Atividade 03: [aqui](./01-logica-imperativa/desenvolvimento-03.md)
   - Atividade 04: [aqui](./01-logica-imperativa/desenvolvimento-04.md)
+  - Atividade 05: [aqui](./01-logica-imperativa/desenvolvimento-05.md)
+  - Atividade 06: [aqui](./01-logica-imperativa/desenvolvimento-06.md)
 
+---
+
+### 03 - Preparação HTML e CSS
+---
+### 04 - HTML e CSS
+---
+### Projeto Integrador
 ---
 
 ## Tecnológias Utilizadas
