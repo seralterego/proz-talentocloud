@@ -23,6 +23,8 @@
 ---
 ### 04 - HTML e CSS
 ---
+### 05 - JavaScript
+---
 ### Projeto Integrador
 ---
 
