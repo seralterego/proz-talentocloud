@@ -16,14 +16,17 @@
 <summary>Algoritmo</summary>
 <code style="display: block; width: 100%;">
   Var
-    nomeEquipe = texto
+    nomeEquipe = caractere
     contador = inteiro
   Inicio
     escreva ("Digite o nome da sua equipe: ")
     leia(nomeEquipe)
-    para contador <= 5 faca
-    Escreva(nomeEquipe "-" contador)
-    fimpara
+    <!-- para contador <= 5 faca -->
+    enquanto(contador <=5)faca
+      escreva(nomeEquipe "-" contador)
+      contador <- contador+1
+    fimquanto
+    fimalgoritmo
 
 </code>
 </details>
