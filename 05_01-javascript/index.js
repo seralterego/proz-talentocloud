@@ -32,7 +32,7 @@ console.log(bebida)
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 /* =========== EXERCÍCIO
-   - Criar um algoritmo que verifica se a pessoa tem idade e habilitação para dirigir
+  - Criar um algoritmo que verifica se a pessoa tem idade e habilitação para dirigir
 */
 
 /*var idadePermitida = 18
