@@ -40,4 +40,4 @@ function subtrairUm() {
 // Adição de eventos
 botaoAdicionarUm.addEventListener("click", adicionarUm);
 botaoSubtrairUm.addEventListener("click", subtrairUm);
-tem menu de contexto
+// tem menu de contexto
