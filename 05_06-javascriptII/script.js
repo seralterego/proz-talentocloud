@@ -38,7 +38,6 @@ window.addEventListener("keyup", (e) => {
   } */ else if (e.code == "Backspace") {
     navPerfil.style.display = "none"
   }
-  
 })
 
 
