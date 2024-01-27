@@ -10,24 +10,27 @@ let idadeInput = document.getElementById("idade");
 let idadeLabel = document.querySelector('label[for="idade"]');
 let idadeHelper = document.getElementById('idade-helper');
 
-let idadeInput = document.getElementById("idade");
-let idadeLabel = document.querySelector('label[for="idade"]');
-let idadeHelper = document.getElementById('idade-helper');
+let senhaInput = document.getElementById("senha");
+let senhaLabel = document.querySelector('label[for="senha"]');
+let senhaHelper = document.getElementById('senha-helper');
+let confirmaSenhaInput = document.getElementById("confirma-senha");
+let confirmaSenhaLabel = document.querySelector('label[for="confirma-senha"]');
+let confirmaSenhaHelper = document.getElementById('confirma-senha-helper');
 
-/* //////////////////////////////////////////////////////// */
-
-//Função para mostrar popups
+/* ////////////////////////////////////////////////////////////////////////////// */
+//Função para mostrar/ocultar popups de campo obrigatório
 function mostrarPopup(input, label) {
-  //Mostrar popup de campo obrigatório
+  //Mostrar popup
   input.addEventListener("focus", function(){
     label.classList.add("required-popup");
   })
-  //Ocultar popup de campo obrigatório
+  //Ocultar popup
   input.addEventListener("blur", function(){
     label.classList.remove("required-popup");
   })
 }
 
+/* ////////////////////////////////////////////////////////////////////////////// */
 //Validação de valores do input
 //username
 usernameInput.addEventListener("change", function(evento) {
@@ -48,9 +51,10 @@ usernameInput.addEventListener("change", function(evento) {
     usernameHelper.classList.remove("visible");
   }
 })
-//Chamando função para apresentar o popup do username
+//Chamando função para apresentar o popup de campo obrigatório
 mostrarPopup(usernameInput, usernameLabel)
 
+/* ------------------------------------------------------------------------------ */
 //email
 emailInput.addEventListener("change", (evento) => {
   let valorEmail = evento.target.value;
@@ -70,9 +74,10 @@ emailInput.addEventListener("change", (evento) => {
     emailHelper.classList.add("visible");
   }
 })
-//Chamando função para apresentar o popup do email
+//Chamando função para apresentar o popup de campo obrigatório
 mostrarPopup(emailInput, emailLabel)
 
+/* ------------------------------------------------------------------------------ */
 //idade
 idadeInput.addEventListener("change", (evento) => {
   let valorIdade = evento.target.value;
@@ -92,7 +97,105 @@ idadeInput.addEventListener("change", (evento) => {
     idadeHelper.classList.add("visible");
   }
 })
-//Chamando função para apresentar o popup da idade
-mostrarPopup(idadeInput, idadeLabel)
 
-//senha (pendente)
+/* ------------------------------------------------------------------------------ */
+//senha
+function senhaUsuario() {
+  senhaInput.addEventListener("change", (evento) => {
+    let valorSenha = evento.target.value;
+    //regex para definir regra da senha de 8 a 20 caracteres e pelo menos um caractere especial
+    let regex = /^(?=.*[@!#$%^&*()\[\]/\\])[@!#$%^&*()\[\]/\\a-zA-Z0-9]{8,20}$/;
+  
+    //o regex.test vai "testar" o valor recebido (no caso valorSenha) entrando no if/else
+    if (valorSenha == '') {
+      //estilo dinâmico caso o valor seja vazio
+      senhaInput.classList.remove("correct");
+      senhaInput.classList.remove("error");
+      senhaInput.classList.remove("visible");
+      senhaHelper.classList.remove("visible");
+    } else if (regex.test(valorSenha)) {
+      //estilo dinâmico caso o valor seja válido
+      senhaInput.classList.add("correct");
+      senhaInput.classList.remove("error");
+      senhaInput.classList.remove("visible");
+      senhaHelper.classList.remove("visible");
+    } else {
+      //estilo dinâmico caso o valor não seja válido
+      senhaInput.classList.remove("correct");
+      senhaInput.classList.add("error");
+      senhaHelper.classList.add("visible");
+      senhaHelper.innerText = "Sua senha tem que ter 8 a 20 caracteres e pelo menos um caractere especial";
+    }
+
+    //console só pra identificarmos a senha que está sendo digitada (excluir se for subir pra algum lugar)
+    console.log('Dentro do listener senhaInput:', valorSenha);
+  }, true)
+}
+
+//Chamando função de validação da senha
+senhaUsuario();
+//Chamando função para apresentar o popup de campo obrigatório
+mostrarPopup(senhaInput, senhaLabel)
+
+/* ------------------------------------------------------------------------------ */
+//confirmar senha
+function confirmarSenhaUsuario() {
+  confirmaSenhaInput.addEventListener("change", (evento) => {
+    let valorConfirmarSenha = evento.target.value;
+    let regex = /^(?=.*[@!#$%^&*()\[\]/\\])[@!#$%^&*()\[\]/\\a-zA-Z0-9]{8,20}$/;
+  
+    if (valorConfirmarSenha == '') {
+      //estilo dinâmico caso o valor seja vazio
+      confirmaSenhaInput.classList.remove("correct");
+      confirmaSenhaInput.classList.remove("error");
+      confirmaSenhaInput.classList.remove("visible");
+      confirmaSenhaHelper.classList.remove("visible");
+    } else if (regex.test(valorConfirmarSenha)) {
+      //estilo dinâmico caso o valor seja válido
+      confirmaSenhaInput.classList.remove("error");
+      confirmaSenhaInput.classList.remove("visible");
+      confirmaSenhaInput.classList.add("correct");
+      confirmaSenhaHelper.classList.remove("visible");
+    } else {
+      confirmaSenhaHelper.classList.remove("visible");
+      //estilo dinâmico caso o valor não seja válido
+      confirmaSenhaInput.classList.remove("correct");
+      confirmaSenhaInput.classList.add("error");
+      confirmaSenhaHelper.classList.add("visible");
+      confirmaSenhaHelper.innerText = "Sua senha tem que ter 8 a 20 caracteres e pelo menos um caractere especial";
+    }
+
+    //console só pra identificarmos a senha que está sendo digitada (excluir se for subir pra algum lugar)
+    console.log('Dentro do listener confirmaSenhaInput:', valorConfirmarSenha);
+  }, true)
+}
+
+//Chamando função de validação da confirmação de senha
+confirmarSenhaUsuario();
+//Chamando função para apresentar o popup de campo obrigatório
+mostrarPopup(confirmaSenhaInput, confirmaSenhaLabel)
+
+/* ------------------------------------------------------------------------------ */
+//Função para comparar senhas
+function compararSenhas() {
+  let status = false;
+  let camposVazios = senhaInput.value == '' && confirmaSenhaInput.value == '';
+  let senhasDiferentes = senhaInput.value != confirmaSenhaInput.value;
+  
+  if (camposVazios) {
+    status = false;
+  } else if (senhasDiferentes) {
+    status = true;
+    //estilo dinâmico caso as senhas sejam diferentes entre si
+    confirmaSenhaInput.classList.remove("correct");
+    confirmaSenhaInput.classList.add("error");
+    confirmaSenhaHelper.classList.add("visible");
+    confirmaSenhaHelper.innerText = "Senhas diferentes...corrija para seguir!";
+  }
+  return status;
+}
+
+//adiciona um novo evento no senhaInput, mas agora, chamando a função compararSenhas
+senhaInput.addEventListener('change', compararSenhas);
+//adiciona um novo evento no confirmaSenhaInput, mas agora, chamando a função compararSenhas
+confirmaSenhaInput.addEventListener('change', compararSenhas);
