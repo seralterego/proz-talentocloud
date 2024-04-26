@@ -21,13 +21,13 @@ Link (enviado) do GitHub:
 <code language="python">
 |   | Variáveis        | Sentença                               | Resultado  |
 | - | -------------    | -------------                          | ---------- |
-| 1 | nota = 10        | nota <= 10                             | False      |
+| 1 | nota = 10        | nota <= 10                             | True       |
 | 2 | nota = 6         | (nota <= 6) and (faltas <= 3)          | False      |
 |   | faltas = 4       |                                        |            |
 | 3 | convidados = 3   | (convidados > 4) or (fumante == True)  | False      |
 |   | fumantes = False |                                        |            |
 | 4 | dia = "qua"      | (dia == "sab") or (dia == dom")        | False      |
-| 5 | feriado = True   | (dia == "sab") or (dia == dom")        | False      |
+| 5 | feriado = True   | not(feriado == false          )        | True       |
 | 6 | dia = "ter"      | (dia == "seg") or !(feriado == False)  | False      |
 |   | feriado = False  |                                        |            |
 </code>

@@ -1,5 +1,7 @@
 # PROZ + AWS + Talento Cloud - TURMA 11
 
+<!-- fonte ícones: https://devicon.dev/ -->
+
 ## Sobre
 
 > Repositório destinado aos estudos do programa de estudos da Proz+AWS+TalentoCloud iniciado em Outubro/2023.
@@ -47,4 +49,6 @@
 <div style="display: inline_block">
   <img align="center" alt="Markdown" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" />
   <img align="center" alt="HTML" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+  <img align="center" alt="HTML" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+  <img align="center" alt="HTML" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
 </div>
