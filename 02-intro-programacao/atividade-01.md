@@ -1,4 +1,4 @@
-# Lógica Imperativa
+# Introdução à Programação
 
 ## Desenvolvimento 01
 

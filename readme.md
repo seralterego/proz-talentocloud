@@ -25,6 +25,7 @@
 ### 02 - Introdução à Programação
 
 - Atividade 01: [aqui](./02-intro-programacao/atividade-01.md)
+- Exercício 01: [aqui](./02-intro-programacao/exercicio01.py)
 
 ---
 
