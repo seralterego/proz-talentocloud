@@ -24,7 +24,7 @@ n/d
 
 ### Resolução:
 
-Link (enviado) do GitHub:
+Link (enviado) do GitHub: https://github.com/seralterego/proz-talentocloud/blob/master/02-intro-programacao/atividade-02.md
 
 <details>
 <summary>Algoritmo</summary>
