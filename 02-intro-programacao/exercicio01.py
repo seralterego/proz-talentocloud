@@ -12,3 +12,19 @@
 #     print("Em recuperação")
 # elif NOTA >= 7:
 #     print("Aprovado")
+
+
+QNTD_RODAS = 3
+PESO_BRUTO = 6100
+QNTD_PESSOAS = 2
+
+if (QNTD_RODAS <= 3):
+  print ("Categoria A")
+elif (QNTD_RODAS == 4) and (QNTD_PESSOAS <= 8) and (PESO_BRUTO <= 3500):
+  print ("Categoria B")
+elif (PESO_BRUTO >= 3500 and PESO_BRUTO <= 6000):
+  print ("Categoria C")
+elif (QNTD_PESSOAS > 8):
+  print ("Categoria D")
+elif (PESO_BRUTO >= 6000):
+  print ("Categoria E")

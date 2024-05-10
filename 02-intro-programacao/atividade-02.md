@@ -30,19 +30,19 @@ Link (enviado) do GitHub:
 <summary>Algoritmo</summary>
 <code language="python">
 
-QNTD_RODAS = 4
+QNTD_RODAS = 3
 PESO_BRUTO = 6100
-QNTD_PESSOAS = 20
+QNTD_PESSOAS = 2
 
-if (QNTD_RODAS < 4):
+if (QNTD_RODAS <= 3):
 print ("Categoria A")
-elif (QNTD_RODAS >= 4) and (QNTD_PESSOAS <= 8) and (PESO_BRUTO <= 3500):
+elif (QNTD_RODAS == 4) and (QNTD_PESSOAS <= 8) and (PESO_BRUTO <= 3500):
 print ("Categoria B")
-elif (QNTD_RODAS >= 4) and (PESO_BRUTO > 3500 and PESO_BRUTO < 6000):
+elif (PESO_BRUTO >= 3500 and PESO_BRUTO <= 6000):
 print ("Categoria C")
-elif (QNTD_RODAS >= 4) and (QNTD_PESSOAS > 8):
+elif (QNTD_PESSOAS > 8):
 print ("Categoria D")
-elif (QNTD_RODAS >= 4) and (PESO_BRUTO >= 6000):
+elif (PESO_BRUTO >= 6000):
 print ("Categoria E")
 
 </code>
