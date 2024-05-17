@@ -1,0 +1,19 @@
+<mxfile host="65bd71144e">
+    <diagram id="1vB7-JvPm0QFUarUiRCM" name="Página-1">
+        <mxGraphModel dx="2004" dy="1222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn.discordapp.com/attachments/1159431885622095922/1204205751791390760/exercicio-01corrigido.png;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="760.98" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="621" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn.discordapp.com/attachments/1159431885622095922/1204211461832843264/exercicio-02corrigido.png;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="210" width="520" height="201" as="geometry"/>
+                </mxCell>
+                <mxCell id="622" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn.discordapp.com/attachments/1159431885622095922/1204219240534642760/exercicio-03corrigido.png;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="480" width="520" height="178" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

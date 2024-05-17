@@ -1,0 +1,89 @@
+// consulta from sales.customers
+select email, first_name, last_name
+from sales.customers
+
+//-- INNER JOIN para fazer join entre as tabelas
+select t1.cpf, t1.name, t2.state
+from temp_tables.tabela_1 as t1 
+inner join temp_tables.tabela_2 as t2
+	on t1.cpf = t2.cpf
+
+//-- RIGHT JOIN para fazer join entre as tabelas
+select t2.cpf, t1.name, t2.state
+from temp_tables.tabela_1 as t1 
+right join temp_tables.tabela_2 as t2
+	on t1.cpf = t2.cpf
+
+//-- FULL JOIN para fazer join entre as tabelas
+select t2.cpf, t1.name, t2.state
+from temp_tables.tabela_1 as t1 
+full join temp_tables.tabela_2 as t2
+	on t1.cpf = t2.cpf
+
+//-- Seleção de uma coluna sem DISTINCT
+select brand
+from sales.products
+
+
+//Status profissional mais frequente nos clientes que compraram automóveis no site
+```
+select 
+	cus.professional_status,
+	count(fun.paid_date) as pagamentos
+
+from sales.funnel as fun
+left join sales.customers as cus
+	on fun.customer_id = cus.customer_id
+group by cus.professional_status
+order by pagamentos desc
+```
+
+
+//Função DATEDIFF para calcular a diferença entre duas datas em 
+dias, semanas, meses, anos
+```
+create function datediff(unidade varchar, data_inicial date, data_final date)
+returns integer
+language sql
+as
+$$
+  select
+    case
+      when unidade in ('d', 'day', 'days') then (data_final - data_inicial)
+      when unidade in ('w', 'week', 'weeks') then (data_final - data_inicial)/7
+      when unidade in ('m', 'month', 'months') then (data_final - data_inicial)/30
+      when unidade in ('y', 'year', 'years') then (data_final - data_inicial)/365
+      end as diferenca
+$$
+```
+
+//Função DATEDIFF
+```
+select datediff('weeks', '2023-03-11', current_date)
+```
+
+
+//Calcule o preço mínimo, máximo e médio dos productos da tabela products
+```
+select min(price), max(price), avg(price)
+from sales.products
+```
+
+//Calcule o nº de clientes da tabela customers por estado
+```
+select state, count(*) as contagem
+from sales.customers
+group by state
+order by contagem desc
+```
+
+// Calcule o nº de clientes por estado filtrando apenas estados acima de 100 clientes
+```
+select 
+    state, 
+    count(*)
+from sales.customers
+group by state
+having count(*) > 100
+```
+
